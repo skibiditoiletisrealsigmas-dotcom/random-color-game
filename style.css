@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#target-color-box {
+    margin-bottom: 1.5rem;
+}
+
+#color-display {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#rgb-value {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+#options-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.color-option {
+    aspect-ratio: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+.color-option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#message {
+    height: 24px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#reset-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #45a049;
+}
